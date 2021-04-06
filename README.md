@@ -152,19 +152,18 @@ cv::Mat image = cv::imread("C:/Users/61240/Pictures/logo_blue.png", 1);
 ```bash
 $ cat C:/Qt/5.15.2/mingw81_64/lib/pkgconfig/opencv.pc
 # Package Information for pkg-config
-prefix==C:/LIB/build_opencv/install
+prefix=C:/LIB/build_opencv/install
 exec_prefix=${prefix}/x64/mingw/bin
 
 libdir=C:/LIB/build_opencv/install/x64/mingw/lib
-includedir_old=C:/LIB/build_opencv/install/include/opencv2
-includedir_new=C:/LIB/build_opencv/install/include
+includedir=C:/LIB/build_opencv/install/include
 
 Name: OpenCV
 Description: Open Source Computer Vision Library
 Version: 4.5.0
-Libs: -L${exec_prefix}/lib -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_stereo -lopencv_dpm -lopencv_rgbd -lopencv_surface_matching -lopencv_xobjdetect -lopencv_aruco -lopencv_optflow -lopencv_hfs -lopencv_saliency -lopencv_xphoto -lopencv_freetype -lopencv_reg -lopencv_xfeatures2d -lopencv_shape -lopencv_bioinspired -lopencv_dnn_objdetect -lopencv_tracking -lopencv_plot -lopencv_ximgproc -lopencv_fuzzy -lopencv_ccalib -lopencv_img_hash -lopencv_face -lopencv_photo -lopencv_objdetect -lopencv_datasets -lopencv_text -lopencv_dnn -lopencv_ml -lopencv_bgsegm -lopencv_video -lopencv_line_descriptor -lopencv_structured_light -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_phase_unwrapping -lopencv_imgproc -lopencv_flann -lopencv_core
+Libs: -LC:/LIB/build_opencv/install/x64/mingw/lib -lopencv_gapi450 -lopencv_stitching450 -lopencv_dnn450 -lopencv_photo450 -lopencv_objdetect450 -lopencv_ml450 -lopencv_video450 -lopencv_calib3d450 -lopencv_features2d450 -lopencv_highgui450 -lopencv_videoio450 -lopencv_imgcodecs450 -lopencv_imgproc450 -lopencv_flann450 -lopencv_core450
 Libs.private: -ldl -lm -lpthread -lrt
-Cflags: -I${includedir_old} -I${includedir_new}
+Cflags: -I${includedir}
 
 $ export PKG_CONFIG_PATH="C:/Qt/5.15.2/mingw81_64/lib/pkgconfig"
 $ pkg-config --modversion opencv
