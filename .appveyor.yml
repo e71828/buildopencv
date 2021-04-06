@@ -56,7 +56,7 @@ install:
   - '%command% "gst-launch-1.0 --version"'
   # git
   - set PATH=C:\Python38-x64;C:\Python38-x64\Scripts;%PATH%
-  - gil clone --branch 4.5.0 https://github.com/opencv/opencv.git
+  - git clone --branch 4.5.0 https://github.com/opencv/opencv.git
   - cd opencv
   - git clone --depth=1 https://github.com/e71828/CppBuildScripts.git build
   # ehco path
