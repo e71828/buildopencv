@@ -196,7 +196,7 @@ includedir_new=${prefix}/include/opencv4/opencv2
 Name: OpenCV
 Description: Open Source Computer Vision Library
 Version: 4.5.0
-Libs: -L${exec_prefix}/lib -lopencv_stitching -lopencv_plot -lopencv_photo -lopencv_objdetect -lopencv_dnn -lopencv_ml -lopencv_video -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_imgproc -lopencv_flann -lopencv_core
+Libs: -L${exec_prefix}/lib -lopencv_stitching -lopencv_objdetect -lopencv_dnn -lopencv_ml -lopencv_video -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_imgproc -lopencv_flann -lopencv_core -lopencv_gapi -lopencv_photo
 Libs.private: -ldl -lm -lpthread -lrt
 Cflags: -I${includedir_old} -I${includedir_new}
 ```
