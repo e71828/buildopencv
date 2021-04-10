@@ -182,4 +182,21 @@ PKGCONFIG += opencv
 #        -lopencv_features2d450  \
 #        -lopencv_calib3d450
 ```
+#### [ubunut](https://zj-image-processing.readthedocs.io/zh_CN/latest/opencv/install-configure/OpenCV-4.0.1%E5%AE%89%E8%A3%85/)
+```bash
+tang@e71828:~$ cat /usr/local/lib/pkgconfig/opencv.pc 
+# Package Information for pkg-config
 
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir_old=${prefix}/include/opencv4
+includedir_new=${prefix}/include/opencv4/opencv2
+
+Name: OpenCV
+Description: Open Source Computer Vision Library
+Version: 4.5.0
+Libs: -L${exec_prefix}/lib -lopencv_stitching -lopencv_plot -lopencv_photo -lopencv_objdetect -lopencv_dnn -lopencv_ml -lopencv_video -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_imgproc -lopencv_flann -lopencv_core
+Libs.private: -ldl -lm -lpthread -lrt
+Cflags: -I${includedir_old} -I${includedir_new}
+```
