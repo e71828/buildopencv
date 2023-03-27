@@ -1,6 +1,10 @@
 # buildopencv
 
-## [How_to_setup_Qt_and_openCV_on_Windows](https://wiki.qt.io/How_to_setup_Qt_and_openCV_on_Windows)
+## Bset Choice. [OpenCV-MinGW-Build](https://github.com/huihut/OpenCV-MinGW-Build)
+
+### My work before.
+
+more on ref: [How_to_setup_Qt_and_openCV_on_Windows](https://wiki.qt.io/How_to_setup_Qt_and_openCV_on_Windows)
 
 ### Cmake
 ```bash
